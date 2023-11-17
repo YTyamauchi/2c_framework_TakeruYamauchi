@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+     <script src="/js/stulogin.js"></script>
+    <title>ログイン画面</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>ログイン</h2>
+        <form th:action="@{/gitlogin}" method="post">
+                <label for="ID">ID:</label>
+                <input type="text" id="ID" name="ID" required>
+                <label for="PW">パスワード:</label>
+                <input type="password" id="PW" name="PW" required>
+                <button type="submit">ログインする</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
