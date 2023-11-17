@@ -14,13 +14,13 @@ public class gitItemEditController {
 		public String getUpd() {
 
 			
-			return "ititemedit.html";
+			return "ititemedit";
 		}
 		@RequestMapping(path = "/gititemedit", method = RequestMethod.POST)
 		public String postUpd(Model model) {
 
 			model.addAttribute("/gitpralogin", "");
-			return "gititemedit.html";
+			return "gititemedit";
 		}
 	}
 
